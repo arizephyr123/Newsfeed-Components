@@ -85,7 +85,43 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
+  },
+  {
+    title: 'Cats Take Over The Sandbox',
+    date: 'Jul 1st, 2019',
+    firstParagraph: `Proident reprehenderit sunt nulla enim dolore adipisicing sit est dolor cillum exercitation ut ullamco aute. Excepteur ex Lorem laboris dolore eu voluptate nisi aliqua ut fugiat quis. Ullamco nisi Lorem id duis in sunt irure sit ullamco. Fugiat nulla in est esse ad reprehenderit aliquip.`,
+
+    secondParagraph: `Ullamco cillum velit non est cillum nostrud anim laborum. Ullamco do labore irure eiusmod sint consectetur duis in dolore sunt qui eiusmod eiusmod adipisicing. Deserunt magna qui adipisicing sit nulla occaecat deserunt consequat ut duis minim cupidatat occaecat enim. Proident do in laborum consectetur amet et fugiat elit Lorem proident. Veniam sunt incididunt nisi aute culpa irure tempor irure nostrud quis ipsum. Voluptate occaecat qui aute quis eiusmod est nostrud et et labore. Et aliquip laborum sit dolor veniam duis ea.`,
+
+    thirdParagraph: `Sit sunt et consequat et sit adipisicing aliqua dolor. Pariatur non adipisicing et nisi qui ipsum cillum voluptate dolor duis. Deserunt ut voluptate ipsum est occaecat sint sint qui duis occaecat adipisicing adipisicing. Tempor consequat sint labore minim tempor nisi aliquip exercitation. In fugiat eiusmod cupidatat sunt eu occaecat culpa commodo sint. Fugiat anim ad nostrud eu sit adipisicing nostrud. Non laborum minim aliqua ut.`
+  },
+  {
+    title: 'Take Your Pet To Work Day Goes Awry',
+    date: 'Apr 1st, 2019',
+    firstParagraph: `Velit esse consequat quis fugiat id tempor dolor cillum. In ex nostrud aute laborum fugiat minim labore anim. Exercitation proident occaecat in nostrud anim est sunt sunt qui laboris nostrud incididunt sint dolore. Duis ex incididunt aliqua ipsum non duis ipsum nostrud nostrud labore consequat dolore. Enim magna velit cupidatat culpa laborum aute mollit. Laborum aliqua fugiat ex duis aute incididunt cupidatat.`,
+
+    secondParagraph: `Velit ipsum adipisicing esse Lorem non laboris aute eu excepteur tempor qui deserunt ullamco nisi. Anim consequat magna irure laboris. Occaecat do occaecat sit cillum magna do nostrud deserunt amet Lorem. Officia qui nisi eiusmod occaecat minim ad. Nisi commodo aliqua duis commodo sunt. Nulla magna incididunt sint dolor adipisicing cupidatat. Eiusmod non occaecat est sunt magna.`,
+
+    thirdParagraph: `Quis ut dolore laborum fugiat deserunt laborum qui velit exercitation voluptate. Dolore ea irure ipsum cillum. Eiusmod fugiat officia incididunt elit ut fugiat adipisicing officia enim dolore in incididunt Lorem. Sit est sunt deserunt aute aliquip nisi ad id pariatur dolore consectetur. Veniam laboris cupidatat enim consectetur irure officia duis amet ad eiusmod nisi fugiat do. Est reprehenderit tempor exercitation nostrud velit eu aliquip consequat. Eiusmod do consectetur velit deserunt ullamco ex ea in id nostrud amet non deserunt.`
+  },
+  {
+    title: 'Wasps Swarm Lambda School Headquarters',
+    date: 'Oct 1st, 2019',
+    firstParagraph: `Consectetur et et labore ea amet voluptate ea deserunt tempor non pariatur fugiat aute. Eu consectetur labore culpa anim mollit ex. Pariatur officia ipsum magna ex sint magna minim excepteur laboris. Aliquip ipsum eiusmod ea incididunt culpa et laborum ea duis.`,
+
+    secondParagraph: `Adipisicing consequat consequat culpa excepteur deserunt. Aliquip ea sint dolor excepteur quis culpa non officia laborum non. Ad voluptate adipisicing officia dolore est tempor esse. Lorem fugiat Lorem ut pariatur. Elit cillum sunt mollit nulla veniam veniam eiusmod mollit culpa enim nisi. Lorem proident exercitation culpa eu magna sit nostrud id.`,
+
+    thirdParagraph: `Excepteur culpa nisi et eiusmod eiusmod nisi labore duis quis ullamco qui anim. Ex commodo sunt elit do officia. Nostrud pariatur duis commodo sunt fugiat laborum est tempor velit. Dolore commodo ad commodo sint sint velit.`
+  },
+  {
+    title: "I Can't Think of Another Title",
+    date: 'Jan 1st, 2019',
+    firstParagraph: `Proident sunt aliqua ad in voluptate duis ex. Do Lorem sit dolore dolore in. Ad eu quis voluptate minim aute sunt nulla velit nostrud veniam quis sunt. Do veniam incididunt dolore officia do reprehenderit mollit. Enim veniam magna fugiat incididunt sit consectetur ut.`,
+
+    secondParagraph: `Reprehenderit velit mollit reprehenderit minim velit cupidatat adipisicing qui nulla enim eiusmod laborum. Dolore reprehenderit id ad aliqua consectetur occaecat aliqua cupidatat elit. Eiusmod aliqua qui ad excepteur ad fugiat incididunt ullamco reprehenderit amet. Nisi nostrud quis id occaecat elit nostrud ad ut pariatur quis minim ex sit et. Labore non adipisicing nisi deserunt ea nisi. Dolor qui et tempor nisi. Velit officia dolore veniam qui commodo labore ad consectetur adipisicing deserunt.`,
+
+    thirdParagraph: `Nostrud eu sunt aliqua dolor esse nisi reprehenderit mollit elit reprehenderit qui exercitation adipisicing. Qui do sunt incididunt mollit esse ex commodo. Excepteur ullamco laboris eu quis. Do aliqua excepteur ex ut eu tempor deserunt mollit eu. Laborum ex ea do fugiat. Voluptate consectetur elit in magna ut fugiat enim ea sit do.`
+  },
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
@@ -112,3 +148,84 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+const article = document.querySelector('div.articles');
+console.log(article);
+
+function createArticle(title, date, firstParagraph, secondParagraph, thirdParagraph){
+  // <div class="article">
+  //   <h2>{title of the article}</h2>
+  //   <p class="date">{date of the article}</p>
+
+  //   {three separate paragraph elements}
+
+  //   <span class='expandButton'></span>
+  // </div>  
+
+  //creating elements to match html
+  const articleDiv = document.createElement('div');
+  const articleTitle = document.createElement('h2');
+  const articleDate = document.createElement('p');
+  const paragraphDiv = document.createElement('div');
+  const articlePar1 = document.createElement('p');
+  const articlePar2 = document.createElement('p');
+  const articlePar3 = document.createElement('p');
+  const articleBtn = document.createElement('span');
+
+  //structure of elements to match html
+  articleDiv.appendChild(articleTitle);
+  articleDiv.appendChild(articleDate);
+  articleDiv.appendChild(articleBtn);
+  articleDiv.appendChild(paragraphDiv);
+  paragraphDiv.appendChild(articlePar1);
+  paragraphDiv.appendChild(articlePar2);
+  paragraphDiv.appendChild(articlePar3);
+
+
+  //adding classes to match CSS
+  articleDiv.classList.add('article');
+  articleDate.classList.add('date');
+  articleBtn.classList.add('expandButton');
+  //paragraphDiv.classList.add('');
+
+  //set text content
+  //title, date, par1, par2, par3
+  articleTitle.textContent = title;
+  articleDate.textContent = date;
+  articlePar1.textContent = firstParagraph;
+  articlePar2.textContent = secondParagraph;
+  articlePar3.textContent = thirdParagraph;
+  articleBtn.textContent = '\u26ab';
+
+
+
+  // Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
+
+  // buttonPanel.addEventListener('click', (e) => {
+  //   console.log('button clicked', e.target)
+  //   // 1. toggle hide-btn on BOTH buttons
+  //   buttonOpen.classList.toggle('hide-btn');
+  //   buttonClose.classList.toggle('hide-btn');
+    
+  //   // 2. Change visibility of the content w/ 'toggle-on'
+  //   panelContent.classList.toggle('toggle-on');
+  // })
+
+  articleBtn.addEventListener('click',()=> {
+    console.log("button clicked");
+    articleDiv.classList.toggle('article-open')
+  })
+
+
+
+return articleDiv
+
+}
+
+// panelData.forEach(data =>{
+//   accordion.appendChild(createPanel(data.title, data.content))
+// })
+
+data.forEach(data => {
+  article.appendChild(createArticle(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph));
+}) 
